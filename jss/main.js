@@ -65,47 +65,29 @@ function pintarCarro() {
 
     document.getElementById('div-carrito').innerHTML = aux;
 };
-
-
-
-// Funciones formulario de contacto
-// Con sweet alert
-function manejeElclick(){
-    Swal.fire({
-        title: 'Información enviada',
-        text: 'Nos comunicarémos a la brevedad',
-        icon: 'success',
-        confirmButtonText: 'FINALIZAR',
-    });
-}
-
-// Con toastfy
-// function manejaElclick(){
-//     Toastify({
-//         text: 'Producto agregado al carrito!',
-//         duration: 3000,
-//     }).showToast();
-// }
- 
+debugger;
 // FETCH a lista productos
-fetch('./data.json')
+fetch('https://swapi.dev/api/people')
   .then((resinicial) => resinicial.json())
   .then((res) => {
-        const miArray = res;
+        const miArray = res.results;
 
         let htmlAux = '';
-        for (let i = 0; i < miArray.lenght; i++){
+        for (let i = 0; i < miArray.length; i++){
             htmlAux =
               htmlAux +
-              `<div onclick="clickEnProducto(${miArray[i].id})">
-                <h3>${miArray[i].id}</h3>
-                <p>${miArray[i].nombre}</p>
-                <p>${miArray[i].precio}</p>
+              `<div onclick="clickEnProducto(1)>
+                <h3>${miArray[i].name}</h3>
+                <p>${miArray[i].height}</p>
+                <p>${miArray[i].gender}</p>
               </div>`;
         }
         document.getElementById('listadoDeProductos').innerHTML = htmlAux;
         console.log(htmlAux);
     })
-    .catch((e) => {
+    .catch((e) => {s
         console.log(e);
     });
+
+ 
+
