@@ -31,7 +31,7 @@ function pintarListado() {
            </div>`;
     }
 
-    document.getElementById('div-productos').innerHTML = aux;
+    // document.getElementById('div-productos').innerHTML = aux;
 };
 
 pintarListado();
@@ -63,29 +63,29 @@ function pintarCarro() {
            </div>`;
     }
 
-    document.getElementById('div-carrito').innerHTML = aux;
+    // document.getElementById('div-carrito').innerHTML = aux;
 };
 debugger;
 // FETCH a lista productos
-fetch('https://swapi.dev/api/people')
+fetch('../data.json')
   .then((resinicial) => resinicial.json())
   .then((res) => {
-        const miArray = res.results;
-
+        const miArray = res;
+        debugger;
         let htmlAux = '';
         for (let i = 0; i < miArray.length; i++){
             htmlAux =
               htmlAux +
-              `<div onclick="clickEnProducto(1)>
-                <h3>${miArray[i].name}</h3>
-                <p>${miArray[i].height}</p>
-                <p>${miArray[i].gender}</p>
+              `<div onclick="clickEnProducto(${miArray[i].id})>
+                <h3>${miArray[i].id}</h3>
+                <p>${miArray[i].name}</p>
+                <p>${miArray[i].price}<</p>
               </div>`;
         }
         document.getElementById('listadoDeProductos').innerHTML = htmlAux;
         console.log(htmlAux);
     })
-    .catch((e) => {s
+    .catch((e) => {
         console.log(e);
     });
 

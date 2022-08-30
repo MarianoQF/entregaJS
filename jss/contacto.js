@@ -6,6 +6,8 @@ let imputNombre;
 let imputApellido;
 let imputTelefono;
 let imputDireccion;
+let tabla;
+let errores;
 
 class Cliente {
     constructor(nombre,apellido,telefono,direccion){
@@ -21,7 +23,10 @@ function inicializarElementos(){
     imputNombre = document.getElementById("nombre");
     imputApellido = document.getElementById("apellido");
     imputTelefono = document.getElementById("telefono");
-    imputDireccion = document.getElementById("direccion")
+    imputDireccion = document.getElementById("direccion");
+    tabla = document.getElementById("tablaProductos");
+    errores = document.querySelector(".errores")
+    errores.style.display = "none";
 }
 inicializarElementos();
 
@@ -29,10 +34,17 @@ formulario.onsubmit = (event) => {
     event.preventDefault();
 
     let nuevoCliente = new Cliente(inputNombre.value, imputApellido.value, imputTelefono.value, imputDireccion.value)
+    if(imputNombre.value != "" && imputApellido.value != "" && imputTelefono.value !="" && imputDireccion.value != ""){
+
+   
     clientes.push(nuevoCliente)
+    limpiarTabla();
     agregarClientes()
+    errores.style.display = "none"
     formulario.reset()
-    
+    }else{
+        errores.style.display = "block"
+    }
 }
 
 function limpiarTabla(){
@@ -59,12 +71,13 @@ function agregarClientes(){
 
 
 
-// sweet alert
-// function manejeElclick(){
-//     Swal.fire({
-//         title: 'Información enviada',
-//         text: 'Nos comunicarémos a la brevedad',
-//         icon: 'success',
-//         confirmButtonText: 'FINALIZAR',
-//     });
-// }
+// Funcion sweet alert
+function manejeElclick(){
+    Swal.fire({
+        title: 'Cliente creado',
+        text: 'Gracias por confiar en nosotros',
+        icon: 'success',
+        confirmButtonText: 'FINALIZAR',
+    });
+}
+manejeElclick();
