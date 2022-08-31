@@ -55,7 +55,7 @@ function pintarCarro() {
     let aux = '';
     for(let i=0; i < productosEnCarro.length; i++){
         aux = aux + 
-          `<div>
+          `<div style="cursor: pointer;border:2px solid green;">
             <h4>Nombre: ${productosEnCarro[i].nombre}</h4>
             <p>$ ${productosEnCarro[i].precio}</p>
             <p>ID: ${productosEnCarro[i].id} </p>

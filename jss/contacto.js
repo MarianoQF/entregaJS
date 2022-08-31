@@ -26,7 +26,6 @@ function inicializarElementos(){
 };
 inicializarElementos()
 
-// let formulario = document.getElementById("formulario");
 formulario.onsubmit = (event) => {
     event.preventDefault();
     let nuevoCliente = new Cliente(inputNombre.value, inputApellido.value,inputTelefono.value,inputDireccion.value)
@@ -62,7 +61,7 @@ function agregarProductosTabla(){
 function manejeElclick(){
     Swal.fire({
         title: 'Cliente creado',
-        text: 'Gracias por confiar en nosotros',
+        text: 'Gracias por confiar en nosotros, nos comunicaremos a la brevedad',
         icon: 'success',
         confirmButtonText: 'FINALIZAR',
     });
