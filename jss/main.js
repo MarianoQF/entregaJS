@@ -65,7 +65,3 @@ function pintarCarro() {
 
     document.getElementById('div-carrito').innerHTML = aux;
 };
-
-
- 
-
