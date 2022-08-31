@@ -7,10 +7,10 @@ fetch('../data.json')
         for (let i = 0; i < miArray.length; i++){
             htmlAux =
               htmlAux +
-              `<div onclick="clickEnProducto(${miArray[i].id})>
+              `<div onclick="meterAlCarro({ID: ${miArray[i].id}, nombre: '${miArray[i].name}', precio: ${miArray[i].price}})"style="cursor: pointer;">
                 <h3>${miArray[i].name}</h3>
                 <p>${miArray[i].price}</p>
-                <p>${miArray[i].id}<</p>
+                <p>ID: ${miArray[i].id}</p>
               </div>`;
         }
         document.getElementById('listadoDeProductos').innerHTML = htmlAux;

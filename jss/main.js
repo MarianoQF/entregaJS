@@ -31,7 +31,7 @@ function pintarListado() {
            </div>`;
     }
 
-    // document.getElementById('div-productos').innerHTML = aux;
+    document.getElementById('div-productos').innerHTML = aux;
 };
 
 pintarListado();
@@ -63,7 +63,7 @@ function pintarCarro() {
            </div>`;
     }
 
-    // document.getElementById('div-carrito').innerHTML = aux;
+    document.getElementById('div-carrito').innerHTML = aux;
 };
 
 

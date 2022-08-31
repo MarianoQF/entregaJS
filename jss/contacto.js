@@ -34,6 +34,7 @@ formulario.onsubmit = (event) => {
     limpiarTabla();
     agregarProductosTabla();
     formulario.reset();
+   
 }
 
 function limpiarTabla(){

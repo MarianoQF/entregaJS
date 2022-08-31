@@ -1,7 +1,7 @@
 [
-  {"name": "Crema dental", "price": 1500, "id": 1},
-  {"name": "Cepillo de dientes", "price": 1500, "id": 2},
-  {"name": "Producto 3", "price": 1500, "id": 3},
-  {"name": "Producto 1", "price": 1500, "id": 4},
-  {"name": "Producto 1", "price": 1500, "id": 5}
+  {"name": "Crema dental Colgate", "price": 300, "id": 1},
+  {"name": "Cepillo de dientes Colgate", "price": 200, "id": 2},
+  {"name": "Jabon Dove", "price": 150, "id": 3},
+  {"name": "Deo Rexona", "price": 200, "id": 4},
+  {"name": "Shampoo head&shoulders", "price": 300, "id": 5}
 ]
