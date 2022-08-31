@@ -3,5 +3,10 @@
   {"name": "Cepillo de dientes Colgate", "price": 200, "id": 2},
   {"name": "Jabon Dove", "price": 150, "id": 3},
   {"name": "Deo Rexona", "price": 200, "id": 4},
-  {"name": "Shampoo head&shoulders", "price": 300, "id": 5}
+  {"name": "Shampoo head&shoulders", "price": 300, "id": 5},
+  {"name": "Crema dental Colgate LW", "price": 400, "id": 6},
+  {"name": "Cepillo de dientes Colgate x2", "price": 350, "id": 7},
+  {"name": "Jabon Rexona", "price": 140, "id": 8},
+  {"name": "Deo Nivea", "price": 180, "id": 9},
+  {"name": "Shampoo Tresseme", "price": 350, "id": 10}
 ]

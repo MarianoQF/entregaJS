@@ -1,0 +1,41 @@
+.head-princ {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 350px;
+    font-size: 130px;
+    font-weight: 1000;
+}
+
+.productosTitulo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productosListado{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    background-color: lightgray;
+    border-radius: blue;
+}
+
+.escri-foot{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-foot{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
