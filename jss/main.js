@@ -56,7 +56,7 @@ function pintarCarro() {
     for(let i=0; i < productosEnCarro.length; i++){
         aux = aux + 
           `<div>
-            <h4>Nombre: ${productosEnCarro[i].nombre}</h6>
+            <h4>Nombre: ${productosEnCarro[i].nombre}</h4>
             <p>$ ${productosEnCarro[i].precio}</p>
             <p>ID: ${productosEnCarro[i].id} </p>
             <button onclick="borrarCosasCarro(${i})">Borrar</button>

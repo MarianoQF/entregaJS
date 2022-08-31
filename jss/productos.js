@@ -7,9 +7,9 @@ fetch('../data.json')
         for (let i = 0; i < miArray.length; i++){
             htmlAux =
               htmlAux +
-              `<div onclick="meterAlCarro({ID: ${miArray[i].id}, nombre: '${miArray[i].name}', precio: ${miArray[i].price}})"style="cursor: pointer;">
+              `<div onclick="meterAlCarro({id: ${miArray[i].id}, nombre: '${miArray[i].name}', precio: ${miArray[i].price}})"style="cursor: pointer;">
                 <h3>${miArray[i].name}</h3>
-                <p>${miArray[i].price}</p>
+                <p>$: ${miArray[i].price}</p>
                 <p>ID: ${miArray[i].id}</p>
               </div>`;
         }
