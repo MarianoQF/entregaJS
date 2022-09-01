@@ -19,3 +19,13 @@ fetch('../data.json')
     .catch((e) => {
         console.log(e);
     });
+
+
+// Funcion toastify
+function agregoProduc(){
+    Toastify({
+        text:'Producto Agregado',
+        duration:1000,
+        style:{background :'green'}
+    }).showToast();
+}

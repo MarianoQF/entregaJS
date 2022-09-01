@@ -65,3 +65,14 @@ function pintarCarro() {
 
     document.getElementById('div-carrito').innerHTML = aux;
 };
+
+// Funcion de toastify borrar producto
+
+// Funcion toastify
+function borroProduc(){
+    Toastify({
+        text:'Producto borrado',
+        duration:1000,
+        style:{background :'red'}
+    }).showToast();
+}

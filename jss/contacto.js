@@ -64,5 +64,6 @@ function manejeElclick(){
         text: 'Gracias por confiar en nosotros, nos comunicaremos a la brevedad',
         icon: 'success',
         confirmButtonText: 'FINALIZAR',
+        width:700,
     });
 }
